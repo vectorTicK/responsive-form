@@ -1,10 +1,10 @@
-html, body ,p{
+html, body, p {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: #92bde7;
+    background: #b6b9bd;
     line-height: 1.6;
     margin: 1rem;
 }
@@ -22,6 +22,7 @@ ul {
 
 ul li {
     font-size: 0.8rem;
+    line-height: 2;
 }
 
 .brand {
@@ -61,16 +62,24 @@ ul li {
     display: block;
 }
 
-.contact form button, 
-.contact form input, 
-.contact form textarea {
+.contact form button, .contact form input, .contact form textarea {
     width: 100%;
+    padding: .3rem 0;
     border: 1px solid #c9e6ff;
+}
+
+.contact form textarea {
+    resize: none;
 }
 
 .contact form button {
     background: #c9e6ff;
 }
+
+.contact form button {
+    padding: 1rem 0;
+}
+
 
 .contact form button:hover, .contact form button:focus {
     background: #92bde7;
@@ -86,7 +95,6 @@ ul li {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
-
     .com-info h3, .com-info ul, .brand {
         text-align: left;
     }
